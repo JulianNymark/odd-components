@@ -12,7 +12,9 @@ npm i odd-components
 
 ## PlayingCard
 
-![text](./README/playingcard.png)
+![text](https://raw.githubusercontent.com/JulianNymark/odd-components/main/README/playingcard.png)
+
+- no custom icons, uses utf-8
 
 ### Svelte
 ```html
