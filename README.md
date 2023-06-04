@@ -1,58 +1,49 @@
-# create-svelte
+# odd-components
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Things you might occasionally want!
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+# Install
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npm i odd-components
 ```
 
-## Developing
+# Components
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## PlayingCard
 
-```bash
-npm run dev
+![text](./README/playingcard.png)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+### Svelte
+```html
+<script>
+	import { PlayingCard } from 'odd-components'
+
+    import PlayingCard from
+
+    // using TS
+	// let my_deck: PlayingCard['$$prop_def']['card'][]
+
+    // using JSDoc
+    /** @type {import('$lib/components/PlayingCard.svelte').default['$$prop_def']['card'][]} */
+    let my_deck
+
+	my_deck = [
+		{ suit: 'HEARTS', value: '10' },
+		{ suit: 'SPADES', value: 'K' },
+		{ suit: 'CLUBS', value: 'J' },
+		{ suit: 'DIAMONDS', value: 'Q' }
+	]
+</script>
+
+{#each my_deck as card}
+	<PlayingCard {card} />
+{/each}
+
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+### React
+TBD
 
-## Building
-
-To build your library:
-
-```bash
-npm run package
-```
-
-To create a production version of your showcase app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+### Vue
+TBD
