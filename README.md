@@ -22,18 +22,17 @@ npm i odd-components
     import { PlayingCard } from 'odd-components'
 
     // using TS
-	// let my_deck: PlayingCard['$$prop_def']['card'][]
+    // let my_deck: PlayingCard['$$prop_def']['card'][]
 
-    // using JSDoc
     /** @type {PlayingCard['$$prop_def']['card'][]} */
     let my_deck
 
-	my_deck = [
-		{ suit: 'HEARTS', value: '10' },
-		{ suit: 'SPADES', value: 'K' },
-		{ suit: 'CLUBS', value: 'J' },
-		{ suit: 'DIAMONDS', value: 'Q' }
-	]
+    my_deck = [
+        { suit: 'HEARTS', value: '10' },
+        { suit: 'SPADES', value: 'K' },
+        { suit: 'CLUBS', value: 'J' },
+        { suit: 'DIAMONDS', value: 'Q' }
+    ]
 </script>
 
 {#each my_deck as card}
