@@ -19,15 +19,13 @@ npm i odd-components
 ### Svelte
 ```html
 <script>
-	import { PlayingCard } from 'odd-components'
-
-    import PlayingCard from
+    import { PlayingCard } from 'odd-components'
 
     // using TS
 	// let my_deck: PlayingCard['$$prop_def']['card'][]
 
     // using JSDoc
-    /** @type {import('$lib/components/PlayingCard.svelte').default['$$prop_def']['card'][]} */
+    /** @type {PlayingCard['$$prop_def']['card'][]} */
     let my_deck
 
 	my_deck = [
