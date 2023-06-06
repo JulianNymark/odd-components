@@ -2,6 +2,9 @@
 
 Svelte components you might occasionally want!
 
+# live-demo
+[DEMO](https://svelte.dev/repl/b806a276c91940e4a831c7321d7e6211?version=3.59.1)
+
 # Install
 
 ```bash
