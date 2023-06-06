@@ -1,6 +1,6 @@
 # odd-components
 
-Things you might occasionally want!
+Svelte components you might occasionally want!
 
 # Install
 

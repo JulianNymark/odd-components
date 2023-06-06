@@ -1,6 +1,6 @@
 {
 	"name": "odd-components",
-	"version": "0.0.5",
+	"version": "0.0.11",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -52,8 +52,6 @@
 	"keywords": [
 		"oddball collection",
 		"svelte",
-		"react",
-		"vue",
 		"playing cards"
 	],
 	"license": "MIT",
