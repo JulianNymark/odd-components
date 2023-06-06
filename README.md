@@ -40,9 +40,3 @@ npm i odd-components
 {/each}
 
 ```
-
-### React
-TBD
-
-### Vue
-TBD
